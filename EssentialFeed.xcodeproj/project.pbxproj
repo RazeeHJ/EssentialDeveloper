@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A046716F29EF39870044DE44 /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A046716E29EF39870044DE44 /* RemoteFeedLoaderTests.swift */; };
 		A04831FA29EC951700DC61EC /* EssentialFeed.docc in Sources */ = {isa = PBXBuildFile; fileRef = A04831F929EC951700DC61EC /* EssentialFeed.docc */; };
 		A048320029EC951700DC61EC /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04831F529EC951700DC61EC /* EssentialFeed.framework */; };
 		A048320529EC951700DC61EC /* EssentialFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A048320429EC951700DC61EC /* EssentialFeedTests.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A046716E29EF39870044DE44 /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 		A04831F529EC951700DC61EC /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04831F829EC951700DC61EC /* EssentialFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeed.h; sourceTree = "<group>"; };
 		A04831F929EC951700DC61EC /* EssentialFeed.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EssentialFeed.docc; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		A048320329EC951700DC61EC /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				A046716E29EF39870044DE44 /* RemoteFeedLoaderTests.swift */,
 				A048320429EC951700DC61EC /* EssentialFeedTests.swift */,
 			);
 			path = EssentialFeedTests;
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A046716F29EF39870044DE44 /* RemoteFeedLoaderTests.swift in Sources */,
 				A048320529EC951700DC61EC /* EssentialFeedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
