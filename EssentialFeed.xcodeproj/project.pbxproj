@@ -16,6 +16,7 @@
 		A048321229EC964600DC61EC /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A048321129EC964600DC61EC /* FeedLoader.swift */; };
 		A06532362A1A32CB00BBFE03 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06532352A1A32CB00BBFE03 /* HTTPClient.swift */; };
 		A06532382A1A331200BBFE03 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06532372A1A331200BBFE03 /* FeedItemsMapper.swift */; };
+		A066EF8C2A252C5A00495110 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066EF8B2A252C5A00495110 /* URLSessionHTTPClientTests.swift */; };
 		A07F342429F5ABC40052DB80 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07F342329F5ABC40052DB80 /* RemoteFeedLoader.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		A048321129EC964600DC61EC /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		A06532352A1A32CB00BBFE03 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		A06532372A1A331200BBFE03 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
+		A066EF8B2A252C5A00495110 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		A07F342329F5ABC40052DB80 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				A046716E29EF39870044DE44 /* RemoteFeedLoaderTests.swift */,
+				A066EF8B2A252C5A00495110 /* URLSessionHTTPClientTests.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A046716F29EF39870044DE44 /* RemoteFeedLoaderTests.swift in Sources */,
+				A066EF8C2A252C5A00495110 /* URLSessionHTTPClientTests.swift in Sources */,
 				A048320529EC951700DC61EC /* EssentialFeedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
