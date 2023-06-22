@@ -9,6 +9,15 @@
     }
   ],
   "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:EssentialFeed.xcodeproj",
+          "identifier" : "A04831F429EC951700DC61EC",
+          "name" : "EssentialFeed"
+        }
+      ]
+    },
     "targetForVariableExpansion" : {
       "containerPath" : "container:EssentialFeed.xcodeproj",
       "identifier" : "A04831FE29EC951700DC61EC",
