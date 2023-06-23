@@ -24,8 +24,7 @@
       "identifier" : "A04831FE29EC951700DC61EC",
       "name" : "EssentialFeedTests"
     },
-    "testExecutionOrdering" : "random",
-    "threadSanitizerEnabled" : true
+    "testExecutionOrdering" : "random"
   },
   "testTargets" : [
     {
