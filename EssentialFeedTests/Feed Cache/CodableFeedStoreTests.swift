@@ -74,6 +74,7 @@ class CodableFeedStore {
         }
         
         try! FileManager.default.removeItem(at: storeURL)
+        completion(nil)
     }
 }
 
@@ -179,7 +180,7 @@ class CodableFeedStoreTests: XCTestCase {
     }
     
     func test_delete_emptiesPreviouslyInsertedCache() {
-        let sut = makeSUT(storeURL: noDeletePermissionURL())
+        let sut = makeSUT()
         insert((uniqueImageFeed().local, Date()), to: sut)
         
         let exp = expectation(description: "Wait for cache deletion")
