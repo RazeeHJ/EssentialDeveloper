@@ -34,6 +34,7 @@
 		A0F0EEF62A9FDF7400593925 /* ValidateFeedCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F0EEF52A9FDF7400593925 /* ValidateFeedCacheUseCaseTests.swift */; };
 		A0F0EEF82A9FE48500593925 /* FeedCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F0EEF72A9FE48500593925 /* FeedCacheTestHelpers.swift */; };
 		A0F0EEFA2A9FE53500593925 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F0EEF92A9FE53500593925 /* SharedTestHelpers.swift */; };
+		A0FA5BB92AB4DC130053E58F /* FeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA5BB72AB4DB870053E58F /* FeedStoreSpecs.swift */; };
 		A0FC40802A9D3B7E00D7F479 /* LoadFeedFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC407F2A9D3B7E00D7F479 /* LoadFeedFromCacheUseCaseTests.swift */; };
 		A0FC40832A9D3CBB00D7F479 /* FeedStorySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC40822A9D3CBB00D7F479 /* FeedStorySpy.swift */; };
 /* End PBXBuildFile section */
@@ -85,6 +86,7 @@
 		A0F0EEF52A9FDF7400593925 /* ValidateFeedCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateFeedCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		A0F0EEF72A9FE48500593925 /* FeedCacheTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCacheTestHelpers.swift; sourceTree = "<group>"; };
 		A0F0EEF92A9FE53500593925 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
+		A0FA5BB72AB4DB870053E58F /* FeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoreSpecs.swift; sourceTree = "<group>"; };
 		A0FC407F2A9D3B7E00D7F479 /* LoadFeedFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		A0FC40822A9D3CBB00D7F479 /* FeedStorySpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStorySpy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +124,7 @@
 				A0FC40812A9D3C9700D7F479 /* Helpers */,
 				A00658512A4D81DC00452C44 /* CacheFeedUseCaseTests.swift */,
 				A0FC407F2A9D3B7E00D7F479 /* LoadFeedFromCacheUseCaseTests.swift */,
+				A0FA5BB72AB4DB870053E58F /* FeedStoreSpecs.swift */,
 				A0F0EEF52A9FDF7400593925 /* ValidateFeedCacheUseCaseTests.swift */,
 				A02AAB322AA6821A00E85C28 /* CodableFeedStoreTests.swift */,
 			);
@@ -409,6 +412,7 @@
 				A0F0EEF62A9FDF7400593925 /* ValidateFeedCacheUseCaseTests.swift in Sources */,
 				A0FC40832A9D3CBB00D7F479 /* FeedStorySpy.swift in Sources */,
 				A0FC40802A9D3B7E00D7F479 /* LoadFeedFromCacheUseCaseTests.swift in Sources */,
+				A0FA5BB92AB4DC130053E58F /* FeedStoreSpecs.swift in Sources */,
 				A048320529EC951700DC61EC /* EssentialFeedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
