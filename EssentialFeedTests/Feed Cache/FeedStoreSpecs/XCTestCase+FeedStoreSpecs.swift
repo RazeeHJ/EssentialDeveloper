@@ -112,7 +112,9 @@ extension FeedStoreSpecs where Self: XCTestCase {
         
         XCTAssertEqual(completedOperationsInOrder, [op1, op2, op3], "Expected side-effects ro tun serially but operations finished in the wrong order")
     }
-    
+}
+
+extension FeedStoreSpecs where Self: XCTestCase {
     @discardableResult
     func insert(_ cache: (feed: [LocalFeedImage], timestamp: Date), to sut: FeedStore) -> Error? {
         let exp = expectation(description: "Wait for cache insertion")
@@ -125,6 +127,7 @@ extension FeedStoreSpecs where Self: XCTestCase {
         return insertionError
     }
     
+    @discardableResult
     func deleteCache(from sut: FeedStore) -> Error? {
         let exp = expectation(description: "Wait for cache deletion")
         var deletionError: Error?
@@ -134,6 +137,11 @@ extension FeedStoreSpecs where Self: XCTestCase {
         }
         wait(for: [exp], timeout: 1.0)
         return deletionError
+    }
+    
+    func expect(_ sut: FeedStore, toRetrieveTwice expectedResult: RetrieveCachedFeedResult, file: StaticString = #file, line: UInt = #line) {
+        expect(sut, toRetrieve: expectedResult, file: file, line: line)
+        expect(sut, toRetrieve: expectedResult, file: file, line: line)
     }
     
     func expect(_ sut: FeedStore, toRetrieve expectedResult: RetrieveCachedFeedResult, file: StaticString = #file, line: UInt = #line) {
@@ -156,10 +164,5 @@ extension FeedStoreSpecs where Self: XCTestCase {
         }
         
         wait(for: [exp], timeout: 1.0)
-    }
-    
-    func expect(_ sut: FeedStore, toRetrieveTwice expectedResult: RetrieveCachedFeedResult, file: StaticString = #file, line: UInt = #line) {
-        expect(sut, toRetrieve: expectedResult, file: file, line: line)
-        expect(sut, toRetrieve: expectedResult, file: file, line: line)
     }
 }
