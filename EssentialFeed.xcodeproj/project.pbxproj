@@ -180,7 +180,6 @@
 			children = (
 				A0A2D4242AB775C4004A036C /* CoreDataFeedStore.swift */,
 				A02A44B22AB7ABE600AEB12E /* CoreDataHelpers.swift */,
-				A0AEDF9B2AAB560D00B07F9E /* CodableFeedStore.swift */,
 				A02A44B42AB7AC8E00AEB12E /* ManagedCache.swift */,
 				A02A44B62AB7AC9E00AEB12E /* ManagedFeedImage.swift */,
 				A02A44AE2AB77A2A00AEB12E /* FeedStore.xcdatamodeld */,
@@ -196,9 +195,18 @@
 			path = EssentialFeedCacheIntegrationTests;
 			sourceTree = "<group>";
 		};
+		A00D047C2ABDC86A00007AF1 /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				A0AEDF9B2AAB560D00B07F9E /* CodableFeedStore.swift */,
+			);
+			path = Codable;
+			sourceTree = "<group>";
+		};
 		A02A44B12AB7AB3E00AEB12E /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				A00D047C2ABDC86A00007AF1 /* Codable */,
 				A00D04682AB7B00200007AF1 /* CoreData */,
 			);
 			path = Infrastructure;
