@@ -39,19 +39,7 @@ class EssentialFeedCacheIntegrationTests: XCTestCase {
         }
         wait(for: [saveExp], timeout: 1.0)
 
-        let loadExp = expectation(description: "Wait for load completion")
-        sutToPerformLoad.load { loadResult in
-            switch loadResult {
-            case let .success(imageFeed):
-                XCTAssertEqual(imageFeed, feed)
-
-            case let .failure(error):
-                XCTFail("Expected successful feed result, got \(error) instead")
-            }
-
-            loadExp.fulfill()
-        }
-        wait(for: [loadExp], timeout: 1.0)
+        expect(sutToPerformLoad, toLoad: feed)
     }
     
     // MARK: Helpers
