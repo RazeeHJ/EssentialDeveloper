@@ -18,6 +18,7 @@
         }
       ]
     },
+    "mainThreadCheckerEnabled" : false,
     "targetForVariableExpansion" : {
       "containerPath" : "container:EssentialFeed.xcodeproj",
       "identifier" : "A04831FE29EC951700DC61EC",
