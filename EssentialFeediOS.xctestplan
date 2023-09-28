@@ -1,7 +1,7 @@
 {
   "configurations" : [
     {
-      "id" : "E100804D-D20F-4791-8827-B7156F8AD62E",
+      "id" : "4361BD0F-A7C1-4A4C-A05F-E91B0F99D63F",
       "name" : "Configuration 1",
       "options" : {
 
@@ -18,22 +18,16 @@
         }
       ]
     },
-    "mainThreadCheckerEnabled" : false,
     "targetForVariableExpansion" : {
       "containerPath" : "container:EssentialFeed.xcodeproj",
-      "identifier" : "A04831FE29EC951700DC61EC",
-      "name" : "EssentialFeedTests"
+      "identifier" : "A00D04C12AC6110800007AF1",
+      "name" : "EssentialFeediOS"
     },
-    "testExecutionOrdering" : "random"
+    "testExecutionOrdering" : "random",
+    "testTimeoutsEnabled" : true
   },
   "testTargets" : [
-    {
-      "target" : {
-        "containerPath" : "container:EssentialFeed.xcodeproj",
-        "identifier" : "A04831FE29EC951700DC61EC",
-        "name" : "EssentialFeedTests"
-      }
-    }
+
   ],
   "version" : 1
 }

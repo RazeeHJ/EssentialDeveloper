@@ -17,17 +17,32 @@
 		<key>EssentialFeedAPIEndToEndTests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<key>EssentialFeedCacheIntegrationTests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>3</integer>
+		</dict>
+		<key>EssentialFeediOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>A00D046D2ABDAF0400007AF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A00D04C12AC6110800007AF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A00D04CA2AC6110800007AF1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
