@@ -44,6 +44,7 @@
 		A07AC89B2A535D570001E74E /* LocalFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07AC89A2A535D570001E74E /* LocalFeedLoader.swift */; };
 		A07AC89D2A535DE00001E74E /* FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07AC89C2A535DE00001E74E /* FeedStore.swift */; };
 		A07C14A72A43256000C4D712 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07C14A62A43256000C4D712 /* URLSessionHTTPClient.swift */; };
+		A07D001B2ADECF5E0064C0BC /* UIView+Shimmering.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D001A2ADECF5E0064C0BC /* UIView+Shimmering.swift */; };
 		A07F342429F5ABC40052DB80 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07F342329F5ABC40052DB80 /* RemoteFeedLoader.swift */; };
 		A09290712A570EFE00FAB373 /* RemoteFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09290702A570EFE00FAB373 /* RemoteFeedItem.swift */; };
 		A09290732A570FC200FAB373 /* LocalFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09290722A570FC200FAB373 /* LocalFeedImage.swift */; };
@@ -151,6 +152,7 @@
 		A07AC89A2A535D570001E74E /* LocalFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedLoader.swift; sourceTree = "<group>"; };
 		A07AC89C2A535DE00001E74E /* FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStore.swift; sourceTree = "<group>"; };
 		A07C14A62A43256000C4D712 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		A07D001A2ADECF5E0064C0BC /* UIView+Shimmering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmering.swift"; sourceTree = "<group>"; };
 		A07F342329F5ABC40052DB80 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		A09290702A570EFE00FAB373 /* RemoteFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedItem.swift; sourceTree = "<group>"; };
 		A09290722A570FC200FAB373 /* LocalFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImage.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 			children = (
 				A07903542AD6027000D48A50 /* FeedViewController.swift */,
 				A015A6552AD98D3000868E9B /* FeedImageCell.swift */,
+				A07D001A2ADECF5E0064C0BC /* UIView+Shimmering.swift */,
 			);
 			path = EssentialFeediOS;
 			sourceTree = "<group>";
@@ -676,6 +679,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07D001B2ADECF5E0064C0BC /* UIView+Shimmering.swift in Sources */,
 				A07903552AD6027000D48A50 /* FeedViewController.swift in Sources */,
 				A015A6562AD98D3000868E9B /* FeedImageCell.swift in Sources */,
 			);
