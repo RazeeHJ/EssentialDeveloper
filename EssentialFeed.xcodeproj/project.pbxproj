@@ -503,7 +503,6 @@
 			isa = PBXGroup;
 			children = (
 				A07D003A2AE1570E0064C0BC /* FeedUIComposer.swift */,
-				A07D00412AE1C4360064C0BC /* FeedImageViewModel.swift */,
 			);
 			path = Composers;
 			sourceTree = "<group>";
@@ -512,6 +511,7 @@
 			isa = PBXGroup;
 			children = (
 				A07D003D2AE17C020064C0BC /* FeedViewModel.swift */,
+				A07D00412AE1C4360064C0BC /* FeedImageViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
