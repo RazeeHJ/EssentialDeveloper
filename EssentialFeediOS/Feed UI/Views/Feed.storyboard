@@ -119,6 +119,7 @@
                         <connections>
                             <outlet property="dataSource" destination="LFh-Dd-1xF" id="RF3-Xm-3pL"/>
                             <outlet property="delegate" destination="LFh-Dd-1xF" id="Qc9-2n-wbX"/>
+                            <outlet property="prefetchDataSource" destination="LFh-Dd-1xF" id="Swg-LZ-del"/>
                         </connections>
                     </tableView>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="zQ3-2v-533">
