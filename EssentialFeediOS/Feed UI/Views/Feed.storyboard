@@ -77,6 +77,9 @@
                                                             <buttonConfiguration key="configuration" style="plain" title="↻">
                                                                 <color key="baseForegroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="aac-ec-ufE" eventType="touchUpInside" id="JrO-RJ-cGg"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -114,6 +117,14 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="6df-Ou-HAO" secondAttribute="bottom" priority="999" constant="6" id="hVT-Gd-yWZ"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="YxO-RL-0C3" id="bsb-aH-eYV"/>
+                                    <outlet property="feedImageContainer" destination="p6E-xw-nij" id="mV1-KW-LSo"/>
+                                    <outlet property="feedImageRetryButton" destination="fQD-2B-TRF" id="ygb-8T-6vV"/>
+                                    <outlet property="feedImageView" destination="MMn-ed-3cz" id="VoV-S9-xCY"/>
+                                    <outlet property="locationContainer" destination="Dns-Wl-HbT" id="FRM-fs-LTs"/>
+                                    <outlet property="locationLabel" destination="JJC-hz-Pxz" id="LVJ-ni-4WR"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
