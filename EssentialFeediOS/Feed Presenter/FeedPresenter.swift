@@ -8,7 +8,7 @@
 import Foundation
 import EssentialFeed
 
-protocol FeedLoadingView: class {
+protocol FeedLoadingView {
     func display(isLoading: Bool)
 }
 
