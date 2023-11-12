@@ -12,14 +12,25 @@ protocol FeedViewControllerDelegate {
 }
 
 public final class ErrorView: UIView {
-    public var message: String?
+    @IBOutlet private var label: UILabel!
+    
+    public var message: String? {
+        get { return label.text }
+        set { label.text = newValue }
+    }
+    
+    public override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        label.text = nil
+    }
 }
 
 public final class FeedViewController: UITableViewController, UITableViewDataSourcePrefetching, FeedLoadingView, FeedErrorView {
     var delegate: FeedViewControllerDelegate?
     
     @IBOutlet private(set) public var errorView: ErrorView?
-
+    
     var tableModel = [FeedImageCellController]() {
         didSet { self.tableView.reloadData() }
     }
