@@ -341,6 +341,16 @@
 			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
 		};
+		A00E30F32B01544300B6233C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A07D001A2ADECF5E0064C0BC /* UIView+Shimmering.swift */,
+				A0CB9FD52AEDBF570063E6C4 /* UITableView+Dequeueing.swift */,
+				A0CB9FD72AEDC0690063E6C4 /* UIImageView+Animations.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		A02A44B12AB7AB3E00AEB12E /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
@@ -491,10 +501,8 @@
 		A07D00262AE07C050064C0BC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A00E30F32B01544300B6233C /* Helpers */,
 				A015A6552AD98D3000868E9B /* FeedImageCell.swift */,
-				A07D001A2ADECF5E0064C0BC /* UIView+Shimmering.swift */,
-				A0CB9FD52AEDBF570063E6C4 /* UITableView+Dequeueing.swift */,
-				A0CB9FD72AEDC0690063E6C4 /* UIImageView+Animations.swift */,
 				A0CB9FD12AEDAE730063E6C4 /* Feed.storyboard */,
 				A0CB9FD32AEDAEE30063E6C4 /* Feed.xcassets */,
 			);
