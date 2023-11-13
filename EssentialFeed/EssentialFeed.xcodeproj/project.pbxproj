@@ -365,7 +365,7 @@
 			path = "Feed Presentation";
 			sourceTree = "<group>";
 		};
-		A00E31022B016DBE00B6233C /* FeedPresentation */ = {
+		A00E31022B016DBE00B6233C /* Feed Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				A00E31032B016DD600B6233C /* FeedPresenter.swift */,
@@ -376,7 +376,7 @@
 				A00E31112B01765100B6233C /* FeedImageViewModel.swift */,
 				A00E30FF2B016C9700B6233C /* Feed.strings */,
 			);
-			path = FeedPresentation;
+			path = "Feed Presentation";
 			sourceTree = "<group>";
 		};
 		A02A44B12AB7AB3E00AEB12E /* Infrastructure */ = {
@@ -388,13 +388,13 @@
 			path = Infrastructure;
 			sourceTree = "<group>";
 		};
-		A046716A29EC97400044DE44 /* FeedFeature */ = {
+		A046716A29EC97400044DE44 /* Feed Feature */ = {
 			isa = PBXGroup;
 			children = (
 				A048320F29EC959100DC61EC /* FeedImage.swift */,
 				A048321129EC964600DC61EC /* FeedLoader.swift */,
 			);
-			path = FeedFeature;
+			path = "Feed Feature";
 			sourceTree = "<group>";
 		};
 		A0473B1F2AB7626500D2C1FC /* FeedStoreSpecs */ = {
@@ -445,9 +445,9 @@
 			isa = PBXGroup;
 			children = (
 				A07AC8992A535D480001E74E /* Feed Cache */,
-				A046716A29EC97400044DE44 /* FeedFeature */,
-				A07F342229F5ABB40052DB80 /* FeedAPI */,
-				A00E31022B016DBE00B6233C /* FeedPresentation */,
+				A046716A29EC97400044DE44 /* Feed Feature */,
+				A07F342229F5ABB40052DB80 /* Feed API */,
+				A00E31022B016DBE00B6233C /* Feed Presentation */,
 				A04831F829EC951700DC61EC /* EssentialFeed.h */,
 			);
 			path = EssentialFeed;
@@ -577,7 +577,7 @@
 			path = Composers;
 			sourceTree = "<group>";
 		};
-		A07F342229F5ABB40052DB80 /* FeedAPI */ = {
+		A07F342229F5ABB40052DB80 /* Feed API */ = {
 			isa = PBXGroup;
 			children = (
 				A06532372A1A331200BBFE03 /* FeedItemsMapper.swift */,
@@ -586,7 +586,7 @@
 				A07C14A62A43256000C4D712 /* URLSessionHTTPClient.swift */,
 				A09290702A570EFE00FAB373 /* RemoteFeedItem.swift */,
 			);
-			path = FeedAPI;
+			path = "Feed API";
 			sourceTree = "<group>";
 		};
 		A0BADB402A2D21C300ECAD49 /* Helpers */ = {
