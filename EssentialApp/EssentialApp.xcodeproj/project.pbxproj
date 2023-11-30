@@ -16,6 +16,10 @@
 		A053897F2B19492E00F5526D /* EssentialAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A053897E2B19492E00F5526D /* EssentialAppTests.swift */; };
 		A05389892B19492E00F5526D /* EssentialAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05389882B19492E00F5526D /* EssentialAppUITests.swift */; };
 		A053898B2B19492E00F5526D /* EssentialAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A053898A2B19492E00F5526D /* EssentialAppUITestsLaunchTests.swift */; };
+		A0602FB12B19521900265FE9 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0602FAF2B19521900265FE9 /* EssentialFeed.framework */; };
+		A0602FB22B19521900265FE9 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0602FAF2B19521900265FE9 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A0602FB32B19521900265FE9 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0602FB02B19521900265FE9 /* EssentialFeediOS.framework */; };
+		A0602FB42B19521900265FE9 /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0602FB02B19521900265FE9 /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A0602FB52B19521900265FE9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A0602FB22B19521900265FE9 /* EssentialFeed.framework in Embed Frameworks */,
+				A0602FB42B19521900265FE9 /* EssentialFeediOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A05389642B19492D00F5526D /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05389672B19492D00F5526D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +68,8 @@
 		A05389842B19492E00F5526D /* EssentialAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05389882B19492E00F5526D /* EssentialAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUITests.swift; sourceTree = "<group>"; };
 		A053898A2B19492E00F5526D /* EssentialAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A0602FAF2B19521900265FE9 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0602FB02B19521900265FE9 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0602FB12B19521900265FE9 /* EssentialFeed.framework in Frameworks */,
+				A0602FB32B19521900265FE9 /* EssentialFeediOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +106,7 @@
 				A053897D2B19492E00F5526D /* EssentialAppTests */,
 				A05389872B19492E00F5526D /* EssentialAppUITests */,
 				A05389652B19492D00F5526D /* Products */,
+				A0602FAE2B19521900265FE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +151,15 @@
 			path = EssentialAppUITests;
 			sourceTree = "<group>";
 		};
+		A0602FAE2B19521900265FE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0602FAF2B19521900265FE9 /* EssentialFeed.framework */,
+				A0602FB02B19521900265FE9 /* EssentialFeediOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +170,7 @@
 				A05389602B19492D00F5526D /* Sources */,
 				A05389612B19492D00F5526D /* Frameworks */,
 				A05389622B19492D00F5526D /* Resources */,
+				A0602FB52B19521900265FE9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -448,8 +482,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,8 +509,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
