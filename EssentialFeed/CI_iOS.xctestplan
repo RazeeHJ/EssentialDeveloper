@@ -61,6 +61,13 @@
         "identifier" : "A00D04CA2AC6110800007AF1",
         "name" : "EssentialFeediOSTests"
       }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:EssentialApp.xcodeproj",
+        "identifier" : "A0C0E6D82B23CC30002BA7D2",
+        "name" : "EssentialAppUIAcceptanceTests"
+      }
     }
   ],
   "version" : 1
