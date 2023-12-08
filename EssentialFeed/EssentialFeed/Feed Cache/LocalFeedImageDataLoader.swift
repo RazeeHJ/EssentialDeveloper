@@ -31,7 +31,7 @@ extension LocalFeedImageDataLoader {
     }
 }
 
-extension LocalFeedImageDataLoader {
+extension LocalFeedImageDataLoader: FeedImageDataLoader {
     public enum LoadError: Error {
         case failed
         case notFound
