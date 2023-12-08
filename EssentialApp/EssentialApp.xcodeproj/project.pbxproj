@@ -26,6 +26,7 @@
 		A0B489992B1A97FE006575E7 /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B489982B1A97FE006575E7 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */; };
 		A0C0E6CC2B234575002BA7D2 /* FeedLoaderCacheDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0E6CB2B234575002BA7D2 /* FeedLoaderCacheDecoratorTests.swift */; };
 		A0C0E6CE2B2348CB002BA7D2 /* FeedLoaderStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0E6CD2B2348CB002BA7D2 /* FeedLoaderStub.swift */; };
+		A0C0E6D02B2349C2002BA7D2 /* XCTestCase+FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0E6CF2B2349C2002BA7D2 /* XCTestCase+FeedLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		A0B489982B1A97FE006575E7 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderWithFallbackCompositeTests.swift; sourceTree = "<group>"; };
 		A0C0E6CB2B234575002BA7D2 /* FeedLoaderCacheDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderCacheDecoratorTests.swift; sourceTree = "<group>"; };
 		A0C0E6CD2B2348CB002BA7D2 /* FeedLoaderStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderStub.swift; sourceTree = "<group>"; };
+		A0C0E6CF2B2349C2002BA7D2 /* XCTestCase+FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedLoader.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				A03F96862B226C1900C5F639 /* XCTestCase+MemoryLeakTracking.swift */,
 				A03F96882B226DB000C5F639 /* SharedTestHelpers.swift */,
 				A0C0E6CD2B2348CB002BA7D2 /* FeedLoaderStub.swift */,
+				A0C0E6CF2B2349C2002BA7D2 /* XCTestCase+FeedLoader.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				A0602FB92B1A44F900265FE9 /* FeedLoaderWithFallbackCompositeTests.swift in Sources */,
 				A0C0E6CE2B2348CB002BA7D2 /* FeedLoaderStub.swift in Sources */,
 				A03F96872B226C1900C5F639 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				A0C0E6D02B2349C2002BA7D2 /* XCTestCase+FeedLoader.swift in Sources */,
 				A03F96892B226DB000C5F639 /* SharedTestHelpers.swift in Sources */,
 				A0B489992B1A97FE006575E7 /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */,
 				A053897F2B19492E00F5526D /* EssentialAppTests.swift in Sources */,
