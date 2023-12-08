@@ -27,6 +27,7 @@
 		A0C0E6CC2B234575002BA7D2 /* FeedLoaderCacheDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0E6CB2B234575002BA7D2 /* FeedLoaderCacheDecoratorTests.swift */; };
 		A0C0E6CE2B2348CB002BA7D2 /* FeedLoaderStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0E6CD2B2348CB002BA7D2 /* FeedLoaderStub.swift */; };
 		A0C0E6D02B2349C2002BA7D2 /* XCTestCase+FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0E6CF2B2349C2002BA7D2 /* XCTestCase+FeedLoader.swift */; };
+		A0C0E6D42B23C2ED002BA7D2 /* FeedLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0E6D32B23C2ED002BA7D2 /* FeedLoaderCacheDecorator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		A0C0E6CB2B234575002BA7D2 /* FeedLoaderCacheDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderCacheDecoratorTests.swift; sourceTree = "<group>"; };
 		A0C0E6CD2B2348CB002BA7D2 /* FeedLoaderStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderStub.swift; sourceTree = "<group>"; };
 		A0C0E6CF2B2349C2002BA7D2 /* XCTestCase+FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedLoader.swift"; sourceTree = "<group>"; };
+		A0C0E6D32B23C2ED002BA7D2 /* FeedLoaderCacheDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderCacheDecorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,11 +137,12 @@
 				A05389692B19492D00F5526D /* SceneDelegate.swift */,
 				A053896B2B19492D00F5526D /* ViewController.swift */,
 				A0B489962B1A95FD006575E7 /* FeedLoaderWithFallbackComposite.swift */,
+				A03F96832B226BB000C5F639 /* FeedImageDataLoaderWithFallbackComposite.swift */,
+				A0C0E6D32B23C2ED002BA7D2 /* FeedLoaderCacheDecorator.swift */,
 				A053896D2B19492D00F5526D /* Main.storyboard */,
 				A05389702B19492E00F5526D /* Assets.xcassets */,
 				A05389722B19492E00F5526D /* LaunchScreen.storyboard */,
 				A05389752B19492E00F5526D /* Info.plist */,
-				A03F96832B226BB000C5F639 /* FeedImageDataLoaderWithFallbackComposite.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				A053896C2B19492D00F5526D /* ViewController.swift in Sources */,
 				A05389682B19492D00F5526D /* AppDelegate.swift in Sources */,
 				A0B489972B1A95FD006575E7 /* FeedLoaderWithFallbackComposite.swift in Sources */,
+				A0C0E6D42B23C2ED002BA7D2 /* FeedLoaderCacheDecorator.swift in Sources */,
 				A053896A2B19492D00F5526D /* SceneDelegate.swift in Sources */,
 				A03F96842B226BB000C5F639 /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */,
 			);
