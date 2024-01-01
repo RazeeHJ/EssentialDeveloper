@@ -50,6 +50,7 @@
 		A0CECD752B3F5E8500B4F5AA /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CECD742B3F5E8500B4F5AA /* FeedAcceptanceTests.swift */; };
 		A0CECD772B3F684200B4F5AA /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CECD762B3F684200B4F5AA /* HTTPClientStub.swift */; };
 		A0CECD792B3F68A100B4F5AA /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CECD782B3F68A100B4F5AA /* InMemoryFeedStore.swift */; };
+		A0CECD872B434B8400B4F5AA /* UIView+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CECD862B434B8400B4F5AA /* UIView+TestHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,7 @@
 		A0CECD742B3F5E8500B4F5AA /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
 		A0CECD762B3F684200B4F5AA /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
 		A0CECD782B3F68A100B4F5AA /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
+		A0CECD862B434B8400B4F5AA /* UIView+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+TestHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				A0C0E6CF2B2349C2002BA7D2 /* XCTestCase+FeedLoader.swift */,
 				A0CECD762B3F684200B4F5AA /* HTTPClientStub.swift */,
 				A0CECD782B3F68A100B4F5AA /* InMemoryFeedStore.swift */,
+				A0CECD862B434B8400B4F5AA /* UIView+TestHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				A03F96872B226C1900C5F639 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				A0C0E6D02B2349C2002BA7D2 /* XCTestCase+FeedLoader.swift in Sources */,
 				A0CECD6B2B3F4E1100B4F5AA /* FeedUIIntegrationTests+Localization.swift in Sources */,
+				A0CECD872B434B8400B4F5AA /* UIView+TestHelpers.swift in Sources */,
 				A0CECD6C2B3F4E1100B4F5AA /* FeedUIIntegrationTests+Assertions.swift in Sources */,
 				A0CECD702B3F4E1100B4F5AA /* UIControl+TestHelpers.swift in Sources */,
 				A0CECD692B3F4E1100B4F5AA /* UIButton+TestHelpers.swift in Sources */,
