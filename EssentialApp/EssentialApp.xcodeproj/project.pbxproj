@@ -39,6 +39,7 @@
 		A0CECD792B3F68A100B4F5AA /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CECD782B3F68A100B4F5AA /* InMemoryFeedStore.swift */; };
 		A0CECD872B434B8400B4F5AA /* UIView+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CECD862B434B8400B4F5AA /* UIView+TestHelpers.swift */; };
 		A0CECDB92B44B97800B4F5AA /* FeedImageDataLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CECDB82B44B97800B4F5AA /* FeedImageDataLoaderPresentationAdapter.swift */; };
+		A0CECDBB2B44BBC400B4F5AA /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CECDBA2B44BBC400B4F5AA /* CombineHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		A0CECD782B3F68A100B4F5AA /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
 		A0CECD862B434B8400B4F5AA /* UIView+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+TestHelpers.swift"; sourceTree = "<group>"; };
 		A0CECDB82B44B97800B4F5AA /* FeedImageDataLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
+		A0CECDBA2B44BBC400B4F5AA /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				A0CECD592B3F4D9F00B4F5AA /* FeedUIComposer.swift */,
 				A0CECD572B3F4D9F00B4F5AA /* FeedViewAdapter.swift */,
 				A0CECD582B3F4D9F00B4F5AA /* WeakRefVirtualProxy.swift */,
+				A0CECDBA2B44BBC400B4F5AA /* CombineHelpers.swift */,
 				A0CECD542B3F4D9F00B4F5AA /* FeedLoaderPresentationAdapter.swift */,
 				A0CECDB82B44B97800B4F5AA /* FeedImageDataLoaderPresentationAdapter.swift */,
 				A053896B2B19492D00F5526D /* ViewController.swift */,
@@ -316,6 +319,7 @@
 			files = (
 				A0CECD5D2B3F4D9F00B4F5AA /* FeedUIComposer.swift in Sources */,
 				A053896C2B19492D00F5526D /* ViewController.swift in Sources */,
+				A0CECDBB2B44BBC400B4F5AA /* CombineHelpers.swift in Sources */,
 				A05389682B19492D00F5526D /* AppDelegate.swift in Sources */,
 				A053896A2B19492D00F5526D /* SceneDelegate.swift in Sources */,
 				A0CECD5A2B3F4D9F00B4F5AA /* FeedViewAdapter.swift in Sources */,
