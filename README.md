@@ -2,6 +2,10 @@
 
 [![Build, Test](https://github.com/RazeeHJ/EssentialDeveloper/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/RazeeHJ/EssentialDeveloper/actions/workflows/CI.yml)
 
+![](https://github.com/RazeeHJ/EssentialDeveloper/workflows/CI-iOS/badge.svg)
+
+![](https://github.com/RazeeHJ/EssentialDeveloper/workflows/CI-macOS/badge.svg)
+
 ## BDD Specs
 
 ### Story: Customer requests to see their image feed
