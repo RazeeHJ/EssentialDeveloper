@@ -1,5 +1,5 @@
 //
-//  LoadImageCommentsFromRemoteUseCaseTests.swift
+//  ImageCommentsMapperTests.swift
 //  EssentialFeedTests
 //
 //  Created by Razee Hussein-Jamal on 2024-01-04.
@@ -8,7 +8,7 @@
 import XCTest
 import EssentialFeed
 
-class LoadImageCommentsFromRemoteUseCaseTests: XCTestCase {
+class ImageCommentsMapperTests: XCTestCase {
     
     func test_load_deliversErrorOnNon2xxHTTPResponse() {
         let (sut, client) = makeSUT()
