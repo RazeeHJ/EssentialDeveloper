@@ -45,9 +45,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func configureWindow() {
-        
-        let remoteImageLoader = RemoteFeedImageDataLoader(client: httpClient)
-        
+                
         let localImageLoader = LocalFeedImageDataLoader(store: store)
         
         window?.rootViewController = UINavigationController(rootViewController: FeedUIComposer.feedComposedWith(
