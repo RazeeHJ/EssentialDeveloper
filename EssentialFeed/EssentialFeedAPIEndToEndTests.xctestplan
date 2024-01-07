@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "6EA0C456-5355-42A5-B931-D1ADECA44427",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:EssentialFeed.xcodeproj",
+        "identifier" : "A060CB542A447C8B007F512E",
+        "name" : "EssentialFeedAPIEndToEndTests"
+      }
+    }
+  ],
+  "version" : 1
+}
