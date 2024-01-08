@@ -29,13 +29,6 @@
   "testTargets" : [
     {
       "target" : {
-        "containerPath" : "container:EssentialApp.xcodeproj",
-        "identifier" : "A05389792B19492E00F5526D",
-        "name" : "EssentialAppTests"
-      }
-    },
-    {
-      "target" : {
         "containerPath" : "container:..\/EssentialFeed\/EssentialFeed.xcodeproj",
         "identifier" : "A060CB542A447C8B007F512E",
         "name" : "EssentialFeedAPIEndToEndTests"
