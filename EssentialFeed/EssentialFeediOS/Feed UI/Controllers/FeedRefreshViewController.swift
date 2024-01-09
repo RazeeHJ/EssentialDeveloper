@@ -12,7 +12,7 @@ protocol FeedRefreshViewControllerDelegate {
     func didRequestFeedRefresh()
 }
 
-final class FeedRefreshViewController: NSObject, FeedLoadingView {
+final class FeedRefreshViewController: NSObject, ResourceLoadingView {
     @IBOutlet private var view: UIRefreshControl?
     
     var delegate: FeedRefreshViewControllerDelegate?
@@ -21,7 +21,7 @@ final class FeedRefreshViewController: NSObject, FeedLoadingView {
         delegate?.didRequestFeedRefresh()
     }
     
-    func display(_ viewModel: FeedLoadingViewModel) {
+    func display(_ viewModel: ResourceLoadingViewModel) {
         if viewModel.isLoading {
             view?.beginRefreshing()
         } else {
