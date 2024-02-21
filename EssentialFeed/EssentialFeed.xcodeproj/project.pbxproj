@@ -76,6 +76,8 @@
 		A0968D3D2B8409C5007FD041 /* ImageCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0968D3C2B8409C5007FD041 /* ImageCommentCell.swift */; };
 		A0968D3F2B8409ED007FD041 /* ImageComments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0968D3E2B8409ED007FD041 /* ImageComments.storyboard */; };
 		A0968D422B840A4B007FD041 /* ImageCommentsSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0968D412B840A4B007FD041 /* ImageCommentsSnapshotTests.swift */; };
+		A0968D4F2B840CCB007FD041 /* IMAGE_COMMENTS_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = A0968D4D2B840CCB007FD041 /* IMAGE_COMMENTS_dark.png */; };
+		A0968D502B840CCB007FD041 /* IMAGE_COMMENTS_light.png in Resources */ = {isa = PBXBuildFile; fileRef = A0968D4E2B840CCB007FD041 /* IMAGE_COMMENTS_light.png */; };
 		A0A2D4232AB7736D004A036C /* CoreDataFeedStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A2D4222AB7736D004A036C /* CoreDataFeedStoreTests.swift */; };
 		A0A2D4252AB775C4004A036C /* CoreDataFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A2D4242AB775C4004A036C /* CoreDataFeedStore.swift */; };
 		A0AEDF9C2AAB560D00B07F9E /* CodableFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AEDF9B2AAB560D00B07F9E /* CodableFeedStore.swift */; };
@@ -247,6 +249,8 @@
 		A0968D3C2B8409C5007FD041 /* ImageCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentCell.swift; sourceTree = "<group>"; };
 		A0968D3E2B8409ED007FD041 /* ImageComments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageComments.storyboard; sourceTree = "<group>"; };
 		A0968D412B840A4B007FD041 /* ImageCommentsSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsSnapshotTests.swift; sourceTree = "<group>"; };
+		A0968D4D2B840CCB007FD041 /* IMAGE_COMMENTS_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMAGE_COMMENTS_dark.png; sourceTree = "<group>"; };
+		A0968D4E2B840CCB007FD041 /* IMAGE_COMMENTS_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMAGE_COMMENTS_light.png; sourceTree = "<group>"; };
 		A0A2D4222AB7736D004A036C /* CoreDataFeedStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedStoreTests.swift; sourceTree = "<group>"; };
 		A0A2D4242AB775C4004A036C /* CoreDataFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedStore.swift; sourceTree = "<group>"; };
 		A0AEDF9B2AAB560D00B07F9E /* CodableFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStore.swift; sourceTree = "<group>"; };
@@ -761,9 +765,19 @@
 		A0968D402B840A2E007FD041 /* Image Comments UI */ = {
 			isa = PBXGroup;
 			children = (
+				A0968D4C2B840CCB007FD041 /* snapshots */,
 				A0968D412B840A4B007FD041 /* ImageCommentsSnapshotTests.swift */,
 			);
 			path = "Image Comments UI";
+			sourceTree = "<group>";
+		};
+		A0968D4C2B840CCB007FD041 /* snapshots */ = {
+			isa = PBXGroup;
+			children = (
+				A0968D4D2B840CCB007FD041 /* IMAGE_COMMENTS_dark.png */,
+				A0968D4E2B840CCB007FD041 /* IMAGE_COMMENTS_light.png */,
+			);
+			path = snapshots;
 			sourceTree = "<group>";
 		};
 		A0BADB402A2D21C300ECAD49 /* Helpers */ = {
@@ -1112,10 +1126,12 @@
 				A0968D2D2B84092A007FD041 /* FEED_WITH_FAILED_IMAGE_LOADING_light.png in Resources */,
 				A0968D2A2B84092A007FD041 /* FEED_WITH_FAILED_IMAGE_LOADING_dark.png in Resources */,
 				A0968D352B840932007FD041 /* LIST_WITH_ERROR_MESSAGE_dark.png in Resources */,
+				A0968D502B840CCB007FD041 /* IMAGE_COMMENTS_light.png in Resources */,
 				A0968D2C2B84092A007FD041 /* FEED_WITH_CONTENT_light.png in Resources */,
 				A0968D2B2B84092A007FD041 /* FEED_WITH_CONTENT_dark.png in Resources */,
 				A0968D332B840932007FD041 /* EMPTY_LIST_dark.png in Resources */,
 				A0968D342B840932007FD041 /* LIST_WITH_ERROR_MESSAGE_light.png in Resources */,
+				A0968D4F2B840CCB007FD041 /* IMAGE_COMMENTS_dark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
