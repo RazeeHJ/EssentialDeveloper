@@ -14,7 +14,7 @@ class ListSnapshotTests: XCTestCase {
     func test_emptyList() {
         let sut = makeSUT()
         
-        sut.display(emptyFeed())
+        sut.display(emptyList())
         
         assert(snapshot: sut.snapshot(for: .iPhone8(style: .light)), named: "EMPTY_LIST_light")
         assert(snapshot: sut.snapshot(for: .iPhone8(style: .dark)), named: "EMPTY_LIST_dark")
@@ -41,7 +41,7 @@ class ListSnapshotTests: XCTestCase {
         return controller
     }
     
-    private func emptyFeed() -> [FeedImageCellController] {
+    private func emptyList() -> [CellController] {
         return []
     }
 }
