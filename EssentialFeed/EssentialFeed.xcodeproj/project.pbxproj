@@ -630,18 +630,10 @@
 		A07D00302AE07E8E0064C0BC /* Feed UI */ = {
 			isa = PBXGroup;
 			children = (
-				A07D00392AE156F60064C0BC /* Composers */,
 				A07D00252AE07BFA0064C0BC /* Controllers */,
 				A07D00262AE07C050064C0BC /* Views */,
 			);
 			path = "Feed UI";
-			sourceTree = "<group>";
-		};
-		A07D00392AE156F60064C0BC /* Composers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Composers;
 			sourceTree = "<group>";
 		};
 		A07F342229F5ABB40052DB80 /* Feed API */ = {
