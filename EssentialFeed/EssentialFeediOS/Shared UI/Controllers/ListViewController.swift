@@ -21,15 +21,15 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         configureTableView()
         refresh()
     }
     
     private func configureTableView() {
         dataSource.defaultRowAnimation = .fade
-                tableView.dataSource = dataSource
-                tableView.tableHeaderView = errorView.makeContainer()
+        tableView.dataSource = dataSource
+        tableView.tableHeaderView = errorView.makeContainer()
         
         errorView.onHide = { [weak self] in
             self?.tableView.beginUpdates()
@@ -72,6 +72,11 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
     
     public func display(_ viewModel: ResourceErrorViewModel) {
         errorView.message = viewModel.message
+    }
+    
+    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let dl = cellController(at: indexPath)?.delegate
+        dl?.tableView?(tableView, didSelectRowAt: indexPath)
     }
     
     public override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
