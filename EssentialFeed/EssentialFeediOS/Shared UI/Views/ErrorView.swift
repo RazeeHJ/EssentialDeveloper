@@ -9,7 +9,7 @@ import UIKit
 
 public final class ErrorView: UIButton {
     public var message: String? {
-        get { return isVisible ? title(for: .normal) : nil }
+        get { return isVisible ? configuration?.title : nil }
         set { setMessageAnimated(newValue) }
     }
     
@@ -28,10 +28,10 @@ public final class ErrorView: UIButton {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = NSTextAlignment.center
         
-        var attributes = AttributeContainer()
-        attributes.paragraphStyle = paragraphStyle
-        attributes.font = UIFont.preferredFont(forTextStyle: .body)
-        return attributes
+        return AttributeContainer([
+            .paragraphStyle: paragraphStyle,
+            .font:  UIFont.preferredFont(forTextStyle: .body)
+        ])
     }
     
     private func configure() {
