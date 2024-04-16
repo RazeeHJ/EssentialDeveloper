@@ -16,10 +16,12 @@ extension FeedUIIntegrationTests {
         // MARK: - FeedLoader
         
         private var feedRequests = [PassthroughSubject<Paginated<FeedImage>, Error>]()
-
+        
         var loadFeedCallCount: Int {
             return feedRequests.count
         }
+        
+        private(set) var loadMoreCallCount = 0
         
         func loadPublisher() -> AnyPublisher<Paginated<FeedImage>, Error> {
             let publisher = PassthroughSubject<Paginated<FeedImage>, Error>()
@@ -28,7 +30,9 @@ extension FeedUIIntegrationTests {
         }
         
         func completeFeedLoading(with feed: [FeedImage] = [], at index: Int = 0) {
-            feedRequests[index].send(Paginated(items: feed))
+            feedRequests[index].send(Paginated(items: feed, loadMore: { [weak self] _ in
+                self?.loadMoreCallCount += 1
+            }))
         }
         
         func completeFeedLoadingWithError(at index: Int = 0) {
@@ -37,7 +41,7 @@ extension FeedUIIntegrationTests {
         }
         
         // MARK: - FeedImageDataLoader
-
+        
         private struct TaskSpy: FeedImageDataLoaderTask {
             let cancelCallback: () -> Void
             func cancel() {
@@ -52,7 +56,7 @@ extension FeedUIIntegrationTests {
         }
         
         private(set) var cancelledImageURLs = [URL]()
-
+        
         func loadImageData(from url: URL, completion: @escaping (FeedImageDataLoader.Result) -> Void) -> FeedImageDataLoaderTask {
             imageRequests.append((url, completion))
             return TaskSpy { [weak self] in self?.cancelledImageURLs.append(url) }
