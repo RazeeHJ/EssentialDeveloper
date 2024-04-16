@@ -54,15 +54,18 @@ class FeedUIIntegrationTests: XCTestCase {
     }
     
     func test_loadMoreActions_requestMoreFromLoader() {
-           let (sut, loader) = makeSUT()
-           sut.simulateAppearance()
-           loader.completeFeedLoading()
-
-           XCTAssertEqual(loader.loadMoreCallCount, 0, "Expected no requests before until load more action")
-
-           sut.simulateLoadMoreFeedAction()
-           XCTAssertEqual(loader.loadMoreCallCount, 1, "Expected load more request")
-       }
+        let (sut, loader) = makeSUT()
+        sut.simulateAppearance()
+        loader.completeFeedLoading()
+        
+        XCTAssertEqual(loader.loadMoreCallCount, 0, "Expected no requests before until load more action")
+        
+        sut.simulateLoadMoreFeedAction()
+        XCTAssertEqual(loader.loadMoreCallCount, 1, "Expected load more request")
+        
+        sut.simulateLoadMoreFeedAction()
+        XCTAssertEqual(loader.loadMoreCallCount, 1, "Expected no request while loading more")
+    }
     
     func test_loadFeedActions_runsAutomaticallyOnlyOnFirstAppearance() {
         let (sut, loader) = makeSUT()
@@ -80,7 +83,7 @@ class FeedUIIntegrationTests: XCTestCase {
         
         sut.simulateAppearance()
         XCTAssertTrue(sut.isShowingLoadingIndicator, "Expected loading indicator once view appears")
-
+        
         loader.completeFeedLoading(at: 0)
         XCTAssertFalse(sut.isShowingLoadingIndicator, "Expected no loading indicator once loading completes successfully")
         
@@ -421,7 +424,7 @@ class FeedUIIntegrationTests: XCTestCase {
     func test_loadFeedCompletion_dispatchesFromBackgroundToMainThread() {
         let (sut, loader) = makeSUT()
         sut.simulateAppearance()
-
+        
         let exp = expectation(description: "Wait for background queue")
         DispatchQueue.global().async {
             loader.completeFeedLoading(at: 0)
