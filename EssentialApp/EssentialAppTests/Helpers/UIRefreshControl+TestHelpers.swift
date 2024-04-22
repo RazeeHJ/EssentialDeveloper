@@ -9,8 +9,6 @@ import UIKit
 
 extension UIRefreshControl {
     func simulatePullToRefresh() {
-        allTargets.forEach { target in
-            simulate(event: .valueChanged)
-        }
+        simulate(event: .valueChanged)
     }
 }
