@@ -11,6 +11,7 @@
 		A03F96892B226DB000C5F639 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F96882B226DB000C5F639 /* SharedTestHelpers.swift */; };
 		A041C9622B8C062B00861824 /* CommentsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A041C9612B8C062B00861824 /* CommentsUIComposer.swift */; };
 		A041C9642B8C065300861824 /* CommentsUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A041C9632B8C065300861824 /* CommentsUIIntegrationTests.swift */; };
+		A05053FF2BD6D858008FF92B /* NullStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05053FE2BD6D858008FF92B /* NullStore.swift */; };
 		A05389682B19492D00F5526D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05389672B19492D00F5526D /* AppDelegate.swift */; };
 		A053896A2B19492D00F5526D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05389692B19492D00F5526D /* SceneDelegate.swift */; };
 		A053896C2B19492D00F5526D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A053896B2B19492D00F5526D /* ViewController.swift */; };
@@ -72,6 +73,7 @@
 		A03F96882B226DB000C5F639 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		A041C9612B8C062B00861824 /* CommentsUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIComposer.swift; sourceTree = "<group>"; };
 		A041C9632B8C065300861824 /* CommentsUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIIntegrationTests.swift; sourceTree = "<group>"; };
+		A05053FE2BD6D858008FF92B /* NullStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NullStore.swift; sourceTree = "<group>"; };
 		A05389642B19492D00F5526D /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05389672B19492D00F5526D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A05389692B19492D00F5526D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				A05389722B19492E00F5526D /* LaunchScreen.storyboard */,
 				A05389752B19492E00F5526D /* Info.plist */,
 				A041C9612B8C062B00861824 /* CommentsUIComposer.swift */,
+				A05053FE2BD6D858008FF92B /* NullStore.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			files = (
 				A0CECD5D2B3F4D9F00B4F5AA /* FeedUIComposer.swift in Sources */,
 				A053896C2B19492D00F5526D /* ViewController.swift in Sources */,
+				A05053FF2BD6D858008FF92B /* NullStore.swift in Sources */,
 				A0CECDBB2B44BBC400B4F5AA /* CombineHelpers.swift in Sources */,
 				A05389682B19492D00F5526D /* AppDelegate.swift in Sources */,
 				A041C9622B8C062B00861824 /* CommentsUIComposer.swift in Sources */,
