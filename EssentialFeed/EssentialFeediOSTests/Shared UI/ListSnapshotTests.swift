@@ -32,7 +32,6 @@ class ListSnapshotTests: XCTestCase {
     // MARK: - Helpers
     
     private func makeSUT() -> ListViewController {
-        let bundle = Bundle(for: ListViewController.self)
         let controller = ListViewController()
         controller.loadViewIfNeeded()
         controller.tableView.separatorStyle = .none
