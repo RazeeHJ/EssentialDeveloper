@@ -66,22 +66,21 @@ final class CoreDataFeedImageDataStoreTests: XCTestCase {
         wait(for: [op1, op2, op3], timeout: 5.0, enforceOrder: true)
     }
     
+    // - MARK: Helpers
+    
+    private func makeSUT(file: StaticString = #file, line: UInt = #line) -> CoreDataFeedStore {
+        let storeURL = URL(fileURLWithPath: "/dev/null")
+        let sut = try! CoreDataFeedStore(storeURL: storeURL)
+        trackForMemoryLeaks(sut, file: file, line: line)
+        return sut
+    }
+    
     private func notFound() -> FeedImageDataStore.RetrievalResult {
         return .success(.none)
     }
     
     private func localImage(url: URL) -> LocalFeedImage {
         return LocalFeedImage(id: UUID(), description: "any", location: "any", url: url)
-    }
-    
-    // - MARK: Helpers
-    
-    private func makeSUT(file: StaticString = #file, line: UInt = #line) -> CoreDataFeedStore {
-        let storeBundle = Bundle(for: CoreDataFeedStore.self)
-        let storeURL = URL(fileURLWithPath: "/dev/null")
-        let sut = try! CoreDataFeedStore(storeURL: storeURL)
-        trackForMemoryLeaks(sut, file: file, line: line)
-        return sut
     }
     
     private func found(_ data: Data) -> FeedImageDataStore.RetrievalResult {
@@ -107,9 +106,11 @@ final class CoreDataFeedImageDataStoreTests: XCTestCase {
             if case let .failure(error) = result {
                 XCTFail("Failed to save \(image) with error \(error)", file: file, line: line)
             }
+            
             exp.fulfill()
         }
         wait(for: [exp], timeout: 1.0)
+        
         do {
             try sut.insert(data, for: url)
         } catch {
