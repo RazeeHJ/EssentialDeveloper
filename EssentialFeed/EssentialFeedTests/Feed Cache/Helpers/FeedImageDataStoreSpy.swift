@@ -14,7 +14,6 @@ class FeedImageDataStoreSpy: FeedImageDataStore {
         case retrieve(dataFor: URL)
     }
     
-    private var completions = [(FeedImageDataStore.RetrievalResult) -> Void]()
     private(set) var receivedMessages = [Message]()
     
     private var retrievalResult: Result<Data?, Error>?
