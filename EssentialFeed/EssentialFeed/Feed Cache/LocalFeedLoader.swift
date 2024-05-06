@@ -17,7 +17,7 @@ public final class LocalFeedLoader {
     }
 }
 
-extension LocalFeedLoader: FeedCache {    
+extension LocalFeedLoader: FeedCache {
     public func save(_ feed: [FeedImage]) throws {
         try store.deleteCachedFeed()
         try store.insert(feed.toLocal(), timestamp: currentDate())
@@ -25,15 +25,11 @@ extension LocalFeedLoader: FeedCache {
 }
 
 extension LocalFeedLoader {
-    public typealias LoadResult = Swift.Result<[FeedImage], Error>
-    
-    public func load(completion: @escaping (LoadResult) -> Void) {
-        completion(LoadResult {
-            if let cache = try store.retrieve(), FeedCachePolicy.validate(cache.timestamp, against: currentDate()) {
-                return cache.feed.toModels()
-            }
-            return []
-        })
+    public func load() throws -> [FeedImage] {
+        if let cache = try store.retrieve(), FeedCachePolicy.validate(cache.timestamp, against: currentDate()) {
+            return cache.feed.toModels()
+        }
+        return []
     }
 }
 
