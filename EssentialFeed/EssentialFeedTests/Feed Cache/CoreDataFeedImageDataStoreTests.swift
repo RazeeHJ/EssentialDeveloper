@@ -11,50 +11,59 @@ import EssentialFeed
 final class CoreDataFeedImageDataStoreTests: XCTestCase {
     
     func test_retrieveImageData_deliversNotFoundWhenEmpty() {
-        let sut = makeSUT()
-        
-        expect(sut, toCompleteRetrievalWith: notFound(), for: anyURL())
+        try makeSUT { sut in
+            expect(sut, toCompleteRetrievalWith: notFound(), for: anyURL())
+        }
     }
     
     func test_retrieveImageData_deliversNotFoundWhenStoredDataURLDoesNotMatch() {
-        let sut = makeSUT()
-        let url = URL(string: "http://a-url.com")!
-        let nonMatchingURL = URL(string: "http://another-url.com")!
-        
-        insert(anyData(), for: url, into: sut)
-        
-        expect(sut, toCompleteRetrievalWith: notFound(), for: nonMatchingURL)
+        try makeSUT { sut in
+            let url = URL(string: "http://a-url.com")!
+            let nonMatchingURL = URL(string: "http://another-url.com")!
+            
+            insert(anyData(), for: url, into: sut)
+            
+            expect(sut, toCompleteRetrievalWith: notFound(), for: nonMatchingURL)
+        }
     }
     
     func test_retrieveImageData_deliversFoundDataWhenThereIsAStoredImageDataMatchingURL() {
-        let sut = makeSUT()
-        let storedData = anyData()
-        let matchingURL = URL(string: "http://a-url.com")!
-        
-        insert(storedData, for: matchingURL, into: sut)
-        
-        expect(sut, toCompleteRetrievalWith: found(storedData), for: matchingURL)
+        try makeSUT { sut in
+            let storedData = anyData()
+            let matchingURL = URL(string: "http://a-url.com")!
+            
+            insert(storedData, for: matchingURL, into: sut)
+            
+            expect(sut, toCompleteRetrievalWith: found(storedData), for: matchingURL)
+        }
     }
     
     func test_retrieveImageData_deliversLastInsertedValue() {
-        let sut = makeSUT()
-        let firstStoredData = Data("first".utf8)
-        let lastStoredData = Data("last".utf8)
-        let url = URL(string: "http://a-url.com")!
-        
-        insert(firstStoredData, for: url, into: sut)
-        insert(lastStoredData, for: url, into: sut)
-        
-        expect(sut, toCompleteRetrievalWith: found(lastStoredData), for: url)
+        try makeSUT { sut in
+            let firstStoredData = Data("first".utf8)
+            let lastStoredData = Data("last".utf8)
+            let url = URL(string: "http://a-url.com")!
+            
+            insert(firstStoredData, for: url, into: sut)
+            insert(lastStoredData, for: url, into: sut)
+            
+            expect(sut, toCompleteRetrievalWith: found(lastStoredData), for: url)
+        }
     }
     
     // - MARK: Helpers
     
-    private func makeSUT(file: StaticString = #file, line: UInt = #line) -> CoreDataFeedStore {
+    private func makeSUT(_ test: @escaping (CoreDataFeedStore) -> Void, file: StaticString = #file, line: UInt = #line) -> CoreDataFeedStore {
+        
         let storeURL = URL(fileURLWithPath: "/dev/null")
         let sut = try! CoreDataFeedStore(storeURL: storeURL)
         trackForMemoryLeaks(sut, file: file, line: line)
-        return sut
+        let exp = expectation(description: "wait for operation")
+        sut.perform {
+            test(sut)
+            exp.fulfill()
+        }
+        wait(for: [exp], timeout: 0.1)
     }
     
     private func notFound() -> Result<Data?, Error> {
