@@ -472,9 +472,8 @@ class FeedUIIntegrationTests: XCTestCase {
         loader.completeFeedLoading(with: [image0, image1])
         
         sut.simulateFeedImageBecomingVisibleAgain(at: 0)
-        sut.simulateFeedImageBecomingVisibleAgain(at: 1)
         
-        XCTAssertEqual(loader.loadedImageURLs, [image0.url, image1.url], "Expected two image URL request after first view becomes visible again")
+        XCTAssertEqual(loader.loadedImageURLs, [image0.url, image0.url], "Expected two image URL request after first view becomes visible again")
         
         sut.simulateFeedImageBecomingVisibleAgain(at: 1)
         
